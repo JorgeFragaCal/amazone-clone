@@ -1,0 +1,9 @@
+.carousel__img {
+  width: 100%;
+}
+.carousel__container {
+  height: 250px;
+  max-width: 970px;
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+.sidebar__title {
+  margin-bottom: 10px;
+}
+.sidebar__formImage {
+  border: 1px solid #e7e7e7;
+  margin-top: 10px;
+}
+.sidebar__formImage img {
+  width: 100%;
+}
+.error__input {
+  font-size: 12px;
+  line-height: 15px;
+  color: #c40000;
+  margin-top: 6px;
+  display: flex;
+}

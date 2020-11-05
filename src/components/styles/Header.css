@@ -1,0 +1,180 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__menu {
+  margin: 10px 7px;
+  padding: 3px 6px;
+  color: white;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #666;
+}
+.header__menu:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.header__logo {
+  display: flex;
+  width: 165px;
+  align-items: center;
+  height: 50px;
+  border: 1px solid transparent;
+}
+.header__logo:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.header__logoImg {
+  width: 100px;
+  object-fit: contain;
+}
+.header__logoLetter {
+  color: white;
+  margin: 0 6px 10px 1px;
+}
+.header__navSearchDropdownCard {
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px 0 0 4px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+}
+.header__navSearchLabel {
+  white-space: nowrap;
+  color: #555;
+  font-size: 12px;
+  margin-left: 5px;
+  min-width: 19px;
+}
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+  margin: 0 16px;
+}
+.header__searchInput {
+  height: 22px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.header__searchIcon {
+  padding: 10px;
+  height: 22px !important;
+  background-color: #febd69;
+  border-radius: 0 4px 4px 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: solid 1px transparent;
+  padding: 5px 10px;
+}
+.header__option:hover {
+  border: solid 1px white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.header__optionMap {
+  display: flex;
+  margin: 1px 50px 1px 10px;
+  color: white;
+  border: solid 1px transparent;
+}
+.header__optionMap:hover {
+  border: solid 1px white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.header__mapLetter {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  line-height: 15px;
+}
+.header__mapIcon {
+  margin-top: 8px;
+}
+
+.header__optionLineOne {
+  font-size: 12px;
+}
+.header__optionLineTwo {
+  font-size: 14px;
+  font-weight: 800;
+}
+.header__optionBasket {
+  display: flex;
+  align-items: flex-end;
+  padding: 5px 10px;
+  margin-right: 4px;
+  color: white;
+  border: solid 1px transparent;
+}
+.header__optionBasket:hover {
+  border: solid 1px white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.header__optionBasketIcon {
+  font-size: 30px !important;
+}
+.header__optionLineOneBasket {
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f08804;
+  font-size: 13px;
+  width: 18px;
+  border-radius: 100%;
+  font-weight: 800;
+  margin: 0 0 -10px 15px;
+}
+.header__optionLineTwoBasket {
+  font-size: 14px;
+  font-weight: 800;
+}
+.subheader {
+  display: flex;
+  background-color: #232f3e;
+  height: 40px;
+  width: 100%;
+}
+.subheader__fill {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  overflow: hidden;
+  flex: 1;
+}
+.subheader__option {
+  margin: 5px 5px;
+  padding: 5px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border: solid 1px transparent;
+}
+.subheader__option a {
+  color: white;
+}
+.subheader__option:hover {
+  border: solid 1px white;
+  border-radius: 2px;
+  cursor: pointer;
+}

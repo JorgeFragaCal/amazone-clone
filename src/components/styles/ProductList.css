@@ -1,0 +1,22 @@
+.productList {
+  max-width: 1680px;
+  margin-top: 40px;
+}
+.productList__header {
+  display: flex;
+  align-items: baseline;
+}
+.productList__title {
+  font-size: 28px;
+  margin-right: 10px;
+}
+.productList__link {
+  color: #0066c0;
+  font-size: 15px;
+}
+.productList__row-8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  margin-top: 10px;
+}
