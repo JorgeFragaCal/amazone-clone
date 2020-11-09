@@ -6,11 +6,11 @@ import Header from "./components/layout/Header";
 import Checkout from "./components/pages/Checkout";
 import Home from "./components/pages/Home";
 import Products from "./components/pages/Products";
-import ProductoState from "./context/productos/productoState";
+import ProductState from "./context/productos/productState";
 
 function App() {
   return (
-    <ProductoState>
+    <ProductState>
       <Router>
         <div className="App">
           <Header />
@@ -22,7 +22,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-    </ProductoState>
+    </ProductState>
   );
 }
 

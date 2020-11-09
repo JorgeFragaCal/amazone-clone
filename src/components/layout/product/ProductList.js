@@ -1,17 +1,17 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Product from "./Product";
-import productoContext from "../../context/productos/productoContext";
+import productContext from "../../../context/productos/productContext";
 
-import "../styles/ProductList.css";
+import "../../styles/ProductList.css";
 
 const ProductList = ({ title, link }) => {
-  const productosContext = useContext(productoContext);
-  const { productos, obtenerProducto } = productosContext;
+  const productsContext = useContext(productContext);
+  const { products, getProduct } = productsContext;
 
   //Obtener productos cuando carga el componente
   useEffect(() => {
-    obtenerProducto();
+    getProduct();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -24,9 +24,9 @@ const ProductList = ({ title, link }) => {
         </Link>
       </div>
       <div className="productList__row-8">
-        {productos
-          .map((producto) => (
-            <Product key={producto.title} producto={producto} />
+        {products
+          .map((product) => (
+            <Product key={product.title} product={product} />
           ))
           .slice(0, 8)}
       </div>

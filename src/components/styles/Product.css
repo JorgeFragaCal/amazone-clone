@@ -1,5 +1,6 @@
 .product {
   width: 207px;
+  align-content: space-around;
 }
 .product__image {
   height: 250px;
@@ -28,6 +29,7 @@
 .product__info {
   background-color: #fafafa;
   padding: 10px 20px 15px;
+  min-height: 111px;
 }
 .product__priceWhole {
   font-size: 21px;

@@ -1,14 +1,18 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
+import { Link } from "react-router-dom";
+import productContext from "../../context/productos/productContext";
 import SearchIcon from "@material-ui/icons/Search";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import MenuIcon from "@material-ui/icons/Menu";
-import "../styles/Header.css";
 import logo from "../../img/logo.png";
 import banner from "../../img/bannerheader.jpg";
-import { Link } from "react-router-dom";
+import "../styles/Header.css";
 const Header = () => {
+  const productsContext = useContext(productContext);
+  const { basket } = productsContext;
+
   return (
     <Fragment>
       <div className="header" id="home">
@@ -43,13 +47,17 @@ const Header = () => {
             <span className="header__optionLineOne">Suscríbete a</span>
             <span className="header__optionLineTwo">Prime</span>
           </div>
-          <div className="header__optionBasket">
-            <div className="header__mapLetter">
-              <span className="header__optionLineOneBasket">2</span>
-              <ShoppingCartIcon className="header__optionBasketIcon" />
+          <Link to="/checkout">
+            <div className="header__optionBasket">
+              <div className="header__mapLetter">
+                <span className="header__optionLineOneBasket">
+                  {basket?.length}
+                </span>
+                <ShoppingCartIcon className="header__optionBasketIcon" />
+              </div>
+              <span className="header__optionLineTwoBasket">Cesta</span>
             </div>
-            <span className="header__optionLineTwoBasket">Cesta</span>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="subheader">

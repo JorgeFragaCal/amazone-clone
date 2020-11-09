@@ -45,4 +45,4 @@ export const cardGrid = [
     link4: "Ofertas anticipadas de Black Friday",
   },
 ];
-export const productos = [];
+export const products = [];

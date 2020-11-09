@@ -3,24 +3,24 @@ import "../styles/Sidebar.css";
 import "../styles/Button.css";
 import "../styles/Input.css";
 import imagen from "../../img/icon-camera-512.webp";
-import productoContext from "../../context/productos/productoContext";
+import productContext from "../../context/productos/productContext";
 import PriorityHighIcon from "@material-ui/icons/PriorityHigh";
 const Sidebar = () => {
-  const productosContext = useContext(productoContext);
-  const { agregarProducto } = productosContext;
+  const productsContext = useContext(productContext);
+  const { addProduct } = productsContext;
   const [error, setError] = useState(false);
-  const [producto, crearProducto] = useState({
+  const [product, createProduct] = useState({
     title: "",
     priceLow: "",
     priceReal: "",
     image: "",
   });
 
-  const { title, image, priceLow, priceReal } = producto;
+  const { title, image, priceLow, priceReal } = product;
 
   const onChange = (e) => {
-    crearProducto({
-      ...producto,
+    createProduct({
+      ...product,
       [e.target.name]: e.target.value,
     });
   };
@@ -36,8 +36,9 @@ const Sidebar = () => {
       setError(true);
       return;
     }
-    agregarProducto(producto);
-    crearProducto({
+    addProduct(product);
+    setError(false);
+    createProduct({
       title: "",
       priceLow: "",
       priceReal: "",
