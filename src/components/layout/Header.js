@@ -11,7 +11,7 @@ import banner from "../../img/bannerheader.jpg";
 import "../styles/Header.css";
 const Header = () => {
   const productsContext = useContext(productContext);
-  const { basket } = productsContext;
+  const { getBasketTotalProducts, basket } = productsContext;
 
   return (
     <Fragment>
@@ -51,7 +51,7 @@ const Header = () => {
             <div className="header__optionBasket">
               <div className="header__mapLetter">
                 <span className="header__optionLineOneBasket">
-                  {basket?.length}
+                  {getBasketTotalProducts(basket)}
                 </span>
                 <ShoppingCartIcon className="header__optionBasketIcon" />
               </div>

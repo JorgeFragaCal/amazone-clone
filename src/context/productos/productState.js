@@ -3,21 +3,14 @@ import productContext from "./productContext";
 import productsReducer from "./productReducer";
 import {
   AGREGAR_PRODUCTO,
-  OBTENER_PRODUCTO,
+  MOSTRAR_PRODUCTOS,
   AÑADIR_CARRITO,
+  ELIMINAR_CARRITO,
+  TOTAL_CARRITO,
 } from "../../types";
 
 const ProductsState = (props) => {
-  const products = [
-    {
-      title:
-        "Presentamos el Fire TV Stick Lite con mando por voz Alexa | Lite (sin controles del TV), streaming HD, modelo de 2020",
-      priceLow: "19.99",
-      priceReal: "29.99",
-      image:
-        "https://m.media-amazon.com/images/I/51GF9vRAnFL._AC._SR360,460.jpg",
-    },
-  ];
+  //State inicial
   const initialState = {
     products: [],
     basket: [],
@@ -27,13 +20,12 @@ const ProductsState = (props) => {
   const [state, dispatch] = useReducer(productsReducer, initialState);
 
   //Obtener los productos
-  const getProduct = () => {
+  const getProduct = (products) => {
     dispatch({
-      type: OBTENER_PRODUCTO,
+      type: MOSTRAR_PRODUCTOS,
       payload: products,
     });
   };
-
   //Agregar producto nuevo
   const addProduct = (product) => {
     dispatch({
@@ -42,20 +34,37 @@ const ProductsState = (props) => {
     });
   };
   //Añadir producto al carrito
+  ///-----Bugg añade 2 desde la lista pero no desde el carrito-----///
   const addToBasket = (product) => {
     dispatch({
       type: AÑADIR_CARRITO,
       payload: product,
     });
   };
-  //Mostrar los productos del carrito
-
-  const getBasketTotal = (basket) => {
+  //Eliminar producto del carrito
+  const deleteBasket = (product) => {
+    dispatch({
+      type: ELIMINAR_CARRITO,
+      payload: product,
+    });
+  };
+  //Mostrar cantidad de productos del carrito
+  ///---------Cambiarlo a Reducer------------///
+  const getBasketTotalProducts = (basket) => {
     return basket.reduce(
-      (amount, product) => amount + Number(product.priceLow),
+      (amount, product) => amount + Number(product.cantidad),
       0
     );
   };
+  //Mostrar precio total del carrito
+  ///---------Cambiarlo a Reducer------------///
+  const getBasketTotal = (basket) => {
+    return basket.reduce(
+      (amount, product) => amount + Number(product.priceLow) * product.cantidad,
+      0
+    );
+  };
+
   return (
     <productContext.Provider
       value={{
@@ -64,6 +73,8 @@ const ProductsState = (props) => {
         addProduct,
         getProduct,
         addToBasket,
+        deleteBasket,
+        getBasketTotalProducts,
         getBasketTotal,
       }}
     >

@@ -6,7 +6,8 @@ import productContext from "../../context/productos/productContext";
 import CheckoutProduct from "../layout/product/CheckoutProduct";
 function Checkout() {
   const productsContext = useContext(productContext);
-  const { basket, getBasketTotal } = productsContext;
+  const { basket, getBasketTotal, getBasketTotalProducts } = productsContext;
+
   return (
     <div className="checkout">
       <div className="checkout__left">
@@ -20,7 +21,7 @@ function Checkout() {
           <span className="checkout__span">Precio</span>
           <div>
             {basket.map((basket) => (
-              <CheckoutProduct key={basket.title} product={basket} />
+              <CheckoutProduct key={basket.id} product={basket} />
             ))}
           </div>
           <div className="checkout__subtotal">
@@ -28,13 +29,16 @@ function Checkout() {
               renderText={(value) => (
                 <>
                   <p>
-                    Subtotal ({basket?.length}{" "}
-                    {basket?.length === 1 ? "producto" : "productos"}):{" "}
-                    <strong>{value}</strong>
+                    Subtotal ({getBasketTotalProducts(basket)}
+                    {getBasketTotalProducts(basket) === 1
+                      ? " producto"
+                      : " productos"}
+                    ): <strong>{value}</strong>
                   </p>
                 </>
               )}
               decimalScale={2}
+              fixedDecimalScale={true}
               value={getBasketTotal(basket)}
               displayType={"text"}
               thousandSeparator={true}

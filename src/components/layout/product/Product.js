@@ -9,7 +9,7 @@ function Product({ product }) {
 
   return (
     <div className="product">
-      <Link>
+      <Link to="/">
         <div className="product__image">
           <div className="product__imageGradient" />
           <img className="product__imageImg" src={product.image} alt="" />
@@ -25,7 +25,9 @@ function Product({ product }) {
               </span>
               <span className="product__priceSymbol">€</span>
             </div>
-            <div className="product__priceReal">{product.priceReal}€</div>
+            {product.priceReal ? (
+              <div className="product__priceReal">{product.priceReal}€</div>
+            ) : null}
           </div>
           <div className="product__title">{product.title}</div>
           <div className="product__rating">

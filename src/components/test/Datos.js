@@ -45,4 +45,75 @@ export const cardGrid = [
     link4: "Ofertas anticipadas de Black Friday",
   },
 ];
-export const products = [];
+export const productsData = [
+  {
+    id: "1",
+    title:
+      "Presentamos el Fire TV Stick Lite con mando por voz Alexa | Lite (sin controles del TV), streaming HD, modelo de 2020",
+    priceLow: "19.99",
+    priceReal: "29.99",
+    image: "https://m.media-amazon.com/images/I/51GF9vRAnFL._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+  {
+    id: "2",
+    title: "Kindle, ahora con luz frontal integrada, negro",
+    priceLow: "59.99",
+    priceReal: "89.99",
+    image: "https://m.media-amazon.com/images/I/61vE5CAZ2qL._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+  {
+    id: "3",
+    title:
+      "Echo Dot (3.ª generación) - Altavoz inteligente con Alexa, tela de color",
+    priceLow: "49.99",
+    priceReal: "",
+    image: "https://m.media-amazon.com/images/I/61u48FEs0rL._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+  {
+    id: "4",
+    title:
+      "Xiaomi Mi 10T Lite 5G - Smartphone 6+64GB, 6,67 FHD+ DotDisplay, Snapdragon 750G, Cámara cuádruple de 64 MP con IA, 4820 mAh, Gris Perla (Versión oficial),con Alexa Hands-Free",
+    priceLow: "249.00",
+    priceReal: "279.00",
+    image: "https://m.media-amazon.com/images/I/41nzsIc9W1L._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+  {
+    id: "5",
+    title: "Xiaomi Band 5, Unisex Adulto, Negro, Normal",
+    priceLow: "31.84",
+    priceReal: "",
+    image: "https://m.media-amazon.com/images/I/71KsTiNXbdL._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+  {
+    id: "6",
+    title:
+      "Samsung 32T4305 2020 - Smart TV de 32' con Resolución HD, HDR, PurColor, Ultra Clean View y Compatible con Asistentes de Voz (Alexa) [Clase de eficiencia energética A+]",
+    priceLow: "214.99",
+    priceReal: "224.60",
+    image: "https://m.media-amazon.com/images/I/81OQLYp-seL._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+  {
+    id: "7",
+    title:
+      "Xiaomi Mi AirDots Basic S Bluetooth 5.0 Auriculares Bajo estéreo con",
+    priceLow: "17.50",
+    priceReal: "",
+    image: "https://m.media-amazon.com/images/I/716eG0osU1L._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+  {
+    id: "8",
+    title:
+      "Smartwatch, LIFEBEE Reloj Inteligente Impermeable IP68 con Monitor de Sueño",
+    priceLow: "23.99",
+    priceReal: "29.99",
+    image: "https://m.media-amazon.com/images/I/61smdLCuajL._AC._SR360,460.jpg",
+    cantidad: 1,
+  },
+];

@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Product from "./Product";
 import productContext from "../../../context/productos/productContext";
-
+import { productsData } from "../../test/Datos";
 import "../../styles/ProductList.css";
 
 const ProductList = ({ title, link }) => {
@@ -11,7 +11,7 @@ const ProductList = ({ title, link }) => {
 
   //Obtener productos cuando carga el componente
   useEffect(() => {
-    getProduct();
+    getProduct(productsData);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -25,9 +25,8 @@ const ProductList = ({ title, link }) => {
       </div>
       <div className="productList__row-8">
         {products
-          .map((product) => (
-            <Product key={product.title} product={product} />
-          ))
+          .map((product) => <Product key={product.id} product={product} />)
+          .reverse()
           .slice(0, 8)}
       </div>
     </div>

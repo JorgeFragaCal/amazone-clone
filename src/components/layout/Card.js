@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Card.css";
 const Card = ({ card }) => {
   return (
@@ -7,14 +8,14 @@ const Card = ({ card }) => {
         <h2 className="card__title">{card.title}</h2>
       </div>
       <div className="card__image-container">
-        <a href="">
+        <Link to="">
           <img className="card__image" src={card.img} alt="" />
-        </a>
+        </Link>
       </div>
       <div>
-        <a className="card__link" href="">
+        <Link className="card__link" to="">
           {card.link}
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -24,9 +24,9 @@ function Products() {
             nuestra Guía de compra
           </p>
         </div>
-        <ProductList title="Novedades destacadas" />
-        <ProductList title="Los mejor valorados" />
-        <ProductList title="Ofertas destacadas" />
+        <ProductList title="Novedades destacadas" link="" />
+        <ProductList title="Los mejor valorados" link="" />
+        <ProductList title="Ofertas destacadas" link="" />
       </div>
     </div>
   );

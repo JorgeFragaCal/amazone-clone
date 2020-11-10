@@ -22,16 +22,16 @@ const Home = () => {
         <hr />
         <div className="home__row-4">
           {cardGrid.map((cardGrid) => (
-            <CardGrid cardGrid={cardGrid} />
+            <CardGrid cardGrid={cardGrid} key="" />
           ))}
           {cardGrid.map((cardGrid) => (
-            <CardGrid cardGrid={cardGrid} />
+            <CardGrid cardGrid={cardGrid} key="" />
           ))}
           {cardGrid.map((cardGrid) => (
-            <CardGrid cardGrid={cardGrid} />
+            <CardGrid cardGrid={cardGrid} key="" />
           ))}
           {cardGrid.map((cardGrid) => (
-            <CardGrid cardGrid={cardGrid} />
+            <CardGrid cardGrid={cardGrid} key="" />
           ))}
         </div>
         <hr />
