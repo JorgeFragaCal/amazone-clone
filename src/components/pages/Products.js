@@ -5,7 +5,7 @@ import "../styles/Products.css";
 
 function Products() {
   return (
-    <div className="content-row-2">
+    <div className="products content-row-2">
       <div className="sidebar">
         <Sidebar />
       </div>

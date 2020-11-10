@@ -1,9 +1,9 @@
 .product {
-  width: 207px;
+  max-width: 207px;
   align-content: space-around;
 }
 .product__image {
-  height: 250px;
+  width: 100%;
   background-color: white;
   text-align: center;
 }
@@ -18,7 +18,8 @@
   );
 
   height: 250px;
-  width: 210px;
+  width: 100%;
+  max-width: 197px;
 }
 .product__imageImg {
   margin: 10px auto 10px auto;
