@@ -3,13 +3,13 @@ import {
   AGREGAR_PRODUCTO,
   AÑADIR_CARRITO,
   ELIMINAR_CARRITO,
- // TOTAL_PRODUCTOS_CARRITO,
- //TOTAL_RECIO_CARRITO
+  // TOTAL_PRODUCTOS_CARRITO,
+  //TOTAL_RECIO_CARRITO
 } from "../../types";
 
 const productReducer = (state, action) => {
   //Indice de producto cuando existe en el carrito
-  let i = state.basket.indexOf(action.payload);
+  let i = state.basket.findIndex((item) => item.id === action.payload.id);
 
   switch (action.type) {
     case MOSTRAR_PRODUCTOS:
@@ -29,13 +29,15 @@ const productReducer = (state, action) => {
       if (i === -1) {
         return {
           ...state,
-          basket: [...state.basket, action.payload],
+          basket: [...state.basket, { ...action.payload }],
         };
       } else {
         //si existe el producto sumale uno a la cantidad
-        state.basket[i].cantidad += 1;
+        const basket = [...state.basket];
+        basket[i] = { ...basket[i], cantidad: basket[i].cantidad + 1 };
         return {
           ...state,
+          basket,
         };
       }
     case ELIMINAR_CARRITO:
@@ -52,15 +54,6 @@ const productReducer = (state, action) => {
         state.basket[i].cantidad -= 1;
         return { ...state };
       }
-    /*  case TOTAL_CARRITO:
-      return {
-        ...state,
-        total: action.payload.reduce(
-          (amount, product) => amount + Number(product.cantidad),
-          0
-        ),
-      }; */
-
     default:
       return state;
   }

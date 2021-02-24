@@ -34,7 +34,6 @@ const ProductsState = (props) => {
     });
   };
   //Añadir producto al carrito
-  ///-----Bugg añade 2 desde la lista pero no desde el carrito-----///
   const addToBasket = (product) => {
     dispatch({
       type: AÑADIR_CARRITO,
@@ -49,7 +48,6 @@ const ProductsState = (props) => {
     });
   };
   //Mostrar cantidad de productos del carrito
-  ///---------Cambiarlo a Reducer------------///
   const getBasketTotalProducts = (basket) => {
     return basket.reduce(
       (amount, product) => amount + Number(product.cantidad),
@@ -57,7 +55,6 @@ const ProductsState = (props) => {
     );
   };
   //Mostrar precio total del carrito
-  ///---------Cambiarlo a Reducer------------///
   const getBasketTotal = (basket) => {
     return basket.reduce(
       (amount, product) => amount + Number(product.priceLow) * product.cantidad,
