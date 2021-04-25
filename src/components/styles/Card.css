@@ -23,6 +23,10 @@
   text-decoration: none;
   color: #007185;
 }
+.card__link:hover {
+  text-decoration: underline;
+  color: #C7511F;
+}
 .card__container {
   display: grid;
   grid-template-columns: 1fr 1fr;

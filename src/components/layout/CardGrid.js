@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Card.css";
+import { Link } from "react-router-dom";
 const CardGrid = ({ cardGrid }) => {
   return (
     <div className="card">
@@ -29,6 +30,11 @@ const CardGrid = ({ cardGrid }) => {
           </div>
           <span className="card__optionName">{cardGrid.option4}</span>
         </a>
+      </div>
+      <div>
+        <Link className="card__link" to={cardGrid.ver_mas}>
+          Ver más
+        </Link>
       </div>
     </div>
   );

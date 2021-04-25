@@ -24,7 +24,7 @@ export const card = [
     link: "Ofertas anticipadas de Black Friday",
   },
 ];
-export const cardGrid = [
+export const cardGridHome1 = [
   {
     title: "Ofertas en moda",
     option1: "Ropa de abrigo",
@@ -43,8 +43,113 @@ export const cardGrid = [
     img4:
       "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2020/FASHION/PROMO/BFCM/MERCH_EARLY_BFCM/GW/GW_QUAD-CARD_DESK_W-jeans_186X116._SY116_CB417488567_.jpg",
     link4: "Ofertas anticipadas de Black Friday",
+    ver_mas: "",
   },
 ];
+export const cardGridHome2 = [
+  {
+    title: "Dispositivos Amazon",
+    option1: "Tablet Fire HD 8",
+    img1:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/kindle/journeys/NjkzM2MxYWEt/NjkzM2MxYWEt-MGNkNTJjOTEt-w186._SY116_CB660740126_.jpg",
+    link1: "Tablet Fire HD 8",
+    option2: "Echo Auto",
+    img2:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/kindle/journeys/NjkzM2MxYWEt/NjkzM2MxYWEt-ZTE4MDI5YzYt-w186._SY116_CB659682654_.jpg",
+    link2: "Echo Auto",
+    option3: "Echo Show 5",
+    img3:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/kindle/journeys/NjkzM2MxYWEt/NjkzM2MxYWEt-MmIxMDFlMjEt-w186._SY116_CB659682654_.jpg",
+    link3: "Echo Show 5",
+    option4: "Kindle",
+    img4:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/kindle/journeys/NjkzM2MxYWEt/NjkzM2MxYWEt-YjQxYjk4MDMt-w186._SY116_CB661901192_.jpg",
+    link4: "Kindle",
+    ver_mas: "",
+  },
+];
+export const cardGridHome3 = [
+  {
+    title: "El calzado más valorado para hombre",
+    option1: "Botas",
+    img1:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW_CARDS/GW_DESKTOP_QUAD_CARD_186x116_M_BOOTS._SY116_CB656523796_.jpg",
+    link1: "Botas",
+    option2: "Zapatillas",
+    img2:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW_CARDS/GW_DESKTOP_QUAD_CARD_186x116_M_SNEAKERS._SY116_CB656523799_.jpg",
+    link2: "Zapatillas",
+    option3: "Sandalias",
+    img3:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW_CARDS/GW_DESKTOP_QUAD_CARD_186x116_M_SANDALS._SY116_CB656523799_.jpg",
+    link3: "Sandalias",
+    option4: "Zapatos para hombre",
+    img4:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW_CARDS/GW_DESKTOP_QUAD_CARD_186x116_M_SHOES._SY116_CB656523799_.jpg",
+    link4: "Zapatos para hombre",
+    ver_mas: "",
+  },
+];
+export const cardGridHome4 = [
+  {
+    title: "Deportes y aire libre",
+    option1: "Bandas y tubos de entrenamiento",
+    img1:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2021/img/Sports/XCM_CUTTLE_1319585_1640277_ES_3762668_186x116_1X_es_ES._SY116_CB657387169_.jpg",
+    link1: "Bandas y tubos de entrenamiento",
+    option2: "Ciclismo",
+    img2:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2021/img/Sports/XCM_CUTTLE_1319585_1640275_ES_3762667_186x116_1X_es_ES._SY116_CB657387169_.jpg",
+    link2: "Ciclismo",
+    option3: "Yoga",
+    img3:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2021/img/Sports/XCM_CUTTLE_1319585_1640279_ES_3762670_186x116_1X_es_ES._SY116_CB657387169_.jpg",
+    link3: "Yoga",
+    option4: "Electrónica y dispositivos para el deporte",
+    img4:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2021/img/Sports/XCM_CUTTLE_1319585_1640281_ES_3762671_186x116_1X_es_ES._SY116_CB657387169_.jpg",
+    link4: "Electrónica y dispositivos para el deporte",
+    ver_mas: "",
+  },
+];
+export const carouselCategorys = [
+  {
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW/GW_DESK_SHOVELLER_200x200_W_CLO._CB657000262_.jpg",
+    link: "Bandas y tubos de entrenamiento",
+  },
+  {
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW/GW_DESK_SHOVELLER_200x200_W_SHOES._CB657000262_.jpg",
+    link: "Ciclismo",
+  },
+  {
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW/GW_DESK_SHOVELLER_200x200_W_JEWELLERY._CB657000262_.jpg",
+    link: "Yoga",
+  },
+  {
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW/GW_DESK_SHOVELLER_200x200_W_WATCHES._CB657000262_.jpg",
+    link: "Electrónica y dispositivos para el deporte",
+  },
+  {
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW/GW_DESK_SHOVELLER_200x200_M_CLO._CB657000262_.jpg",
+    link: "Electrónica y dispositivos para el deporte",
+  },
+  {
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW/GW_DESK_SHOVELLER_200x200_M_SHOES._CB657000262_.jpg",
+    link6: "Electrónica y dispositivos para el deporte",
+  },
+  {
+    image:
+      "https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2021/FASHION/CML/01_MARCH/MERCH/GW/GW_DESK_SHOVELLER_200x200_M_WATCHES._CB657000262_.jpg",
+    link: "Electrónica y dispositivos para el deporte",
+  },
+];
+
 export const productsData = [
   {
     id: "1",

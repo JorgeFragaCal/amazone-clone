@@ -9,7 +9,7 @@ function Product({ product }) {
 
   return (
     <div className="product">
-      <Link to="/">
+      <Link to="/product">
         <div className="product__image">
           <div className="product__imageGradient" />
           <img className="product__imageImg" src={product.image} alt="" />

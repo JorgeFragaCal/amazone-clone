@@ -1,9 +1,67 @@
-.carousel__img {
-  width: 100%;
-}
 .carousel__container {
-  height: 250px;
-  max-width: 970px;
-  text-align: center;
-  margin: 0 auto;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: white;
+}
+.carousel__title{
+  color:#444 ;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.5
+}
+.slick-slide img {
+ 
+  max-height: 200px;
+}
+.slick-slider:hover .slick-prev,
+.slick-slider:hover .slick-next {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.slick-track {
+  height: 220px;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev,
+.slick-next {
+  opacity: 0;
+  position: absolute;
+  background-color: #fff;
+  height: 100px;
+  line-height: 100px;
+  width: 45px;
+  box-shadow: 0 1px 3px #888;
+  border-radius: 0 3px 3px 0;
+  clip: rect(-10px, 55px, 110px, 0);
+  padding-right: 5px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #fff;
+}
+.slick-next:focus,
+.slick-prev:focus {
+  outline: 5px auto #008296;
+}
+.slick-prev:before,
+.slick-next:before {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 50%;
+  height: 22px;
+  width: 13px;
+  margin-top: -11px;
+  background-image: url(https://m.media-amazon.com/images/S/sash/x6ok_LYiGGUKJXl.png);
+  content: "";
+}
+.slick-prev:before {
+  background-position: -14px 0;
 }

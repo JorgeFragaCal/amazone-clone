@@ -1,9 +1,19 @@
 import React from "react";
+import Banner from "../layout/Banner";
 import Card from "../layout/Card";
 import CardGrid from "../layout/CardGrid";
 import Carousel from "../layout/Carousel";
 import "../styles/Home.css";
-import { cardGrid, card } from "../test/Datos";
+import {
+  card,
+  cardGridHome1,
+  cardGridHome2,
+  cardGridHome3,
+  cardGridHome4,
+  carouselCategorys,
+  carouselProducts,
+  productsData,
+} from "../test/Datos";
 
 const Home = () => {
   return (
@@ -21,22 +31,36 @@ const Home = () => {
         </div>
         <hr />
         <div className="home__row-4">
-          {cardGrid.map((cardGrid) => (
+          {cardGridHome1.map((cardGrid) => (
             <CardGrid cardGrid={cardGrid} key="" />
           ))}
-          {cardGrid.map((cardGrid) => (
+          {cardGridHome2.map((cardGrid) => (
             <CardGrid cardGrid={cardGrid} key="" />
           ))}
-          {cardGrid.map((cardGrid) => (
+          {cardGridHome3.map((cardGrid) => (
             <CardGrid cardGrid={cardGrid} key="" />
           ))}
-          {cardGrid.map((cardGrid) => (
+          {cardGridHome4.map((cardGrid) => (
             <CardGrid cardGrid={cardGrid} key="" />
           ))}
         </div>
         <hr />
         <div className="home__row-1">
-          <Carousel />
+          <Carousel
+            carouselItems={carouselCategorys}
+            title="Lo más valorado por los clientes"
+          />
+        </div>
+        <hr />
+        <div className="home__row-1">
+          <Banner image="https://images-eu.ssl-images-amazon.com/images/G/30/amazonservices/seller_success_stories/2021/03_clic/ES-click_editorial-1x._CB656600928_.jpg" />
+        </div>
+        <hr />
+        <div className="home__row-1">
+          <Carousel
+            carouselItems={productsData}
+            title="La tecnología del momento"
+          />
         </div>
         <hr />
       </div>

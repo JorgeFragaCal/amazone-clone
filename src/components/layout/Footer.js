@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../styles/Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <a href="#home" className="footer__link">
+      <Link to={{ hash: "#home" }} className="footer__link">
         <div className="footer__button">Volver arriba</div>
-      </a>
+      </Link>
       <div className="footer__container">
         <h4>Creado por:</h4>
         <h3>Jorge Fraga Cal</h3>
