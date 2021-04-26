@@ -16,7 +16,7 @@ const Carousel = ({ carouselItems, title }) => {
       <h2 className="carousel__title">{title}</h2>
       <Slider {...settings}>
         {carouselItems.map((item) => (
-          <a href={item.link}>
+          <a href={`/product/${item.id}`}>
             <img key={item.id} src={item.image} alt="" />
           </a>
         ))}

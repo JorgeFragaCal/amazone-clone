@@ -11,7 +11,6 @@ import {
   cardGridHome3,
   cardGridHome4,
   carouselCategorys,
-  carouselProducts,
   productsData,
 } from "../test/Datos";
 

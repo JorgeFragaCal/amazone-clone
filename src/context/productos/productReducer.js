@@ -1,4 +1,5 @@
 import {
+  DETALLE_PRODUCTO,
   MOSTRAR_PRODUCTOS,
   AGREGAR_PRODUCTO,
   AÑADIR_CARRITO,
@@ -12,6 +13,12 @@ const productReducer = (state, action) => {
   let i = state.basket.findIndex((item) => item.id === action.payload.id);
 
   switch (action.type) {
+     case DETALLE_PRODUCTO:
+      //devuelve el state de productos
+      return {
+        ...state,
+        productsDetail:action.payload,
+      };
     case MOSTRAR_PRODUCTOS:
       //devuelve el state de productos
       return {

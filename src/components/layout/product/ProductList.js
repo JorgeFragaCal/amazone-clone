@@ -7,11 +7,11 @@ import "../../styles/ProductList.css";
 
 const ProductList = ({ title, link }) => {
   const productsContext = useContext(productContext);
-  const { products, getProduct } = productsContext;
+  const { products, getProducts } = productsContext;
 
   //Obtener productos cuando carga el componente
   useEffect(() => {
-    getProduct(productsData);
+    getProducts(productsData);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

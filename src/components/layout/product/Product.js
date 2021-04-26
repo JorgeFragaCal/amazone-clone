@@ -6,10 +6,10 @@ import "../../styles/Product.css";
 function Product({ product }) {
   const productsContext = useContext(productContext);
   const { addToBasket } = productsContext;
-
+  const rating = ["⭐", "⭐", "⭐", "⭐", "⭐"];
   return (
     <div className="product">
-      <Link to="/product">
+      <Link to={`/product/${product.id}`}>
         <div className="product__image">
           <div className="product__imageGradient" />
           <img className="product__imageImg" src={product.image} alt="" />
@@ -29,9 +29,10 @@ function Product({ product }) {
               <div className="product__priceReal">{product.priceReal}€</div>
             ) : null}
           </div>
-          <div className="product__title">{product.title}</div>
+          <div className="product__title">{product.title.slice(0,45)}...</div>
           <div className="product__rating">
-            ⭐⭐⭐⭐⭐<span>400</span>
+            {rating.splice(0, product.rating)}
+            <span>{product.ratingCount}</span>
           </div>
         </div>
       </Link>

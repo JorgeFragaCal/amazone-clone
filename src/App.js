@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
@@ -7,7 +7,7 @@ import NavRigth from "./components/layout/NavRigth";
 import Checkout from "./components/pages/Checkout";
 import Home from "./components/pages/Home";
 import Products from "./components/pages/Products";
-import ProductSingle from "./components/pages/ProductSingle";
+import ProductDetail from "./components/pages/ProductDetail";
 import ProductState from "./context/productos/productState";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/products" component={Products} />
               <Route exact path="/checkout" component={Checkout} />
-              <Route exact path="/product" component={ProductSingle} />
+              <Route exact path="/product/:id" component={ProductDetail} />
             </Switch>
             <Footer />
           </div>

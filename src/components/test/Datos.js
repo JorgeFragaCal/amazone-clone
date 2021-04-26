@@ -158,7 +158,15 @@ export const productsData = [
     priceLow: "19.99",
     priceReal: "29.99",
     image: "https://m.media-amazon.com/images/I/51GF9vRAnFL._AC._SR360,460.jpg",
+    imageGallery_1: null,
+    imageGallery_2: null,
+    imageGallery_3: null,
+    imageGallery_4: null,
+    imageGallery_5: null,
+    imageGallery_6: null,
     cantidad: 1,
+    rating: 5,
+    ratingCount: 400,
   },
   {
     id: "2",
@@ -166,7 +174,15 @@ export const productsData = [
     priceLow: "59.99",
     priceReal: "89.99",
     image: "https://m.media-amazon.com/images/I/61vE5CAZ2qL._AC._SR360,460.jpg",
+    imageGallery_1: null,
+    imageGallery_2: null,
+    imageGallery_3: null,
+    imageGallery_4: null,
+    imageGallery_5: null,
+    imageGallery_6: null,
     cantidad: 1,
+    rating: 4,
+    ratingCount: 215,
   },
   {
     id: "3",
@@ -175,7 +191,15 @@ export const productsData = [
     priceLow: "49.99",
     priceReal: "",
     image: "https://m.media-amazon.com/images/I/61u48FEs0rL._AC._SR360,460.jpg",
+    imageGallery_1: null,
+    imageGallery_2: null,
+    imageGallery_3: null,
+    imageGallery_4: null,
+    imageGallery_5: null,
+    imageGallery_6: null,
     cantidad: 1,
+    rating: 5,
+    ratingCount: 345,
   },
   {
     id: "4",
@@ -184,7 +208,15 @@ export const productsData = [
     priceLow: "249.00",
     priceReal: "279.00",
     image: "https://m.media-amazon.com/images/I/41nzsIc9W1L._AC._SR360,460.jpg",
+    imageGallery_1: null,
+    imageGallery_2: null,
+    imageGallery_3: null,
+    imageGallery_4: null,
+    imageGallery_5: null,
+    imageGallery_6: null,
     cantidad: 1,
+    rating: 3,
+    ratingCount: 15,
   },
   {
     id: "5",
@@ -192,7 +224,15 @@ export const productsData = [
     priceLow: "31.84",
     priceReal: "",
     image: "https://m.media-amazon.com/images/I/71KsTiNXbdL._AC._SR360,460.jpg",
+    imageGallery_1: null,
+    imageGallery_2: null,
+    imageGallery_3: null,
+    imageGallery_4: null,
+    imageGallery_5: null,
+    imageGallery_6: null,
     cantidad: 1,
+    rating: 5,
+    ratingCount: 180,
   },
   {
     id: "6",
@@ -201,24 +241,66 @@ export const productsData = [
     priceLow: "214.99",
     priceReal: "224.60",
     image: "https://m.media-amazon.com/images/I/81OQLYp-seL._AC._SR360,460.jpg",
+    imageGallery_1: null,
+    imageGallery_2: null,
+    imageGallery_3: null,
+    imageGallery_4: null,
+    imageGallery_5: null,
+    imageGallery_6: null,
     cantidad: 1,
+    rating: 4,
+    ratingCount: 50,
   },
   {
     id: "7",
     title:
-      "Xiaomi Mi AirDots Basic S Bluetooth 5.0 Auriculares Bajo estéreo con",
-    priceLow: "17.50",
-    priceReal: "",
-    image: "https://m.media-amazon.com/images/I/716eG0osU1L._AC._SR360,460.jpg",
+      "Cecotec Powerful Titanium 1000 Full - Batidora de Mano, Pie XL, 21 Niveles y Turbo, Recubrimiento de Titanio, 1000 W, 3 Accesorios",
+    priceLow: "33.90",
+    priceReal: "45.60",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/I/618oXv7kt5L._AC_SX679_.jpg",
+    imageGallery_1:
+      "https://images-na.ssl-images-amazon.com/images/I/618oXv7kt5L._AC_SX679_.jpg",
+    imageGallery_2:
+      "https://images-na.ssl-images-amazon.com/images/I/71LPKX%2B1U-L._AC_SX679_.jpg",
+    imageGallery_3:
+      "https://images-na.ssl-images-amazon.com/images/I/71kyGhNDeFL._AC_SX679_.jpg",
+    imageGallery_4:
+      "https://images-na.ssl-images-amazon.com/images/I/61MPbGq9sAL._AC_SX679_.jpg",
+    imageGallery_5:
+      "https://images-na.ssl-images-amazon.com/images/I/61DN43pOWGL._AC_SX679_.jpg",
+    imageGallery_6:
+      "https://images-na.ssl-images-amazon.com/images/I/61M8yq-X6vL._AC_SX679_.jpg",
     cantidad: 1,
+    rating: 3,
+    ratingCount: 250,
+    description:
+      "Robot aspirador profesional 4 en 1: barre, aspira, pasa la mopa y friega el suelo; sistema force implode, maximiza la gran potencía de succión de hasta 1400 pa; cuenta con 3 potencía s de limpieza (eco, normal y turbo) y 5 modos de limpieza: auto, bordes, habitación, espiral y vuelta a casa. Tecnología itech space con navegación inteligente gracias a sus sensores de proximidad, antichoque y anti caída; se adapta totalmente a tu hogar limpiando debajo de los muebles, detectando obstáculos y evitando caer; purifica el aire con su filtro epa para retener polvo y alérgenos; su sistema turbo clean carpet proporciona un modo turbo para alfombras; el robot friega por ti. Su sistema wash4you te permitirá con simplemente ponerle el depósito, pasar la mopa y fregar; fregado inteligente gracias a su sistema de válvula electrónica que dosifica y distribuye el agua de forma homogénea; su mopa twin floor está diseñada con dos materiales para realizar una limpieza perfecta en todo tipo de superficies. Sistema best friend care, incluyendo un cepillo central de silicona especial para el pelo de mascotas; llega a todos los rincones gracias a sus 2 cepillos laterales y un cepillo motorizado para eliminar la suciedad más incrustada; contiene 2 depósitos de gran capacidad para sólidos de 500 ml y para líquidos de 400 ml; proporciona una limpieza silenciosa. Sistema all-timetable para programar el robot 24 horas al día durante los 7 días de la semana, desde su mando a distancia con pantalla lcd ; el robot aspirador vuelve automáticamente a la base de carga al finalizar la limpieza; este cuenta con una batería de ion-litio de 14, 4 v y 2600 mah; con una autonomía de 160 minutos.",
   },
   {
     id: "8",
     title:
-      "Smartwatch, LIFEBEE Reloj Inteligente Impermeable IP68 con Monitor de Sueño",
-    priceLow: "23.99",
-    priceReal: "29.99",
-    image: "https://m.media-amazon.com/images/I/61smdLCuajL._AC._SR360,460.jpg",
+      "Cecotec Robot aspirador y fregasuelos Conga 1090. Aspira, Barre, Friega y Pasa la Mopa, iTech Space, 5 Modos, 1400 Pa, Detecta obstáculos, Cepillo Mascotas, 160 min Autonomía",
+    priceLow: "149.00",
+    priceReal: "149.00",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/I/61zT0NpeeOL._AC_SX679_.jpg",
+    imageGallery_1:
+      "https://images-na.ssl-images-amazon.com/images/I/61zT0NpeeOL._AC_SX679_.jpg",
+    imageGallery_2:
+      "https://images-na.ssl-images-amazon.com/images/I/61vZFTCLx8L._AC_SX679_.jpg",
+    imageGallery_3:
+      "https://images-na.ssl-images-amazon.com/images/I/71uVDi7HtlL._AC_SX679_.jpg",
+    imageGallery_4:
+      "https://images-na.ssl-images-amazon.com/images/I/61ZTvsx0DML._AC_SX679_.jpg",
+    imageGallery_5:
+      "https://images-na.ssl-images-amazon.com/images/I/610NAk2n0ML._AC_SX679_.jpg",
+    imageGallery_6:
+      "https://images-na.ssl-images-amazon.com/images/I/71zeWDhkSDL._AC_SX679_.jpg",
     cantidad: 1,
+    rating: 5,
+    ratingCount: 200,
+    description:
+    "Robot aspirador profesional 4 en 1: barre, aspira, pasa la mopa y friega el suelo; sistema force implode, maximiza la gran potencía de succión de hasta 1400 pa; cuenta con 3 potencía s de limpieza (eco, normal y turbo) y 5 modos de limpieza: auto, bordes, habitación, espiral y vuelta a casa. Tecnología itech space con navegación inteligente gracias a sus sensores de proximidad, antichoque y anti caída; se adapta totalmente a tu hogar limpiando debajo de los muebles, detectando obstáculos y evitando caer; purifica el aire con su filtro epa para retener polvo y alérgenos; su sistema turbo clean carpet proporciona un modo turbo para alfombras; el robot friega por ti. Su sistema wash4you te permitirá con simplemente ponerle el depósito, pasar la mopa y fregar; fregado inteligente gracias a su sistema de válvula electrónica que dosifica y distribuye el agua de forma homogénea; su mopa twin floor está diseñada con dos materiales para realizar una limpieza perfecta en todo tipo de superficies. Sistema best friend care, incluyendo un cepillo central de silicona especial para el pelo de mascotas; llega a todos los rincones gracias a sus 2 cepillos laterales y un cepillo motorizado para eliminar la suciedad más incrustada; contiene 2 depósitos de gran capacidad para sólidos de 500 ml y para líquidos de 400 ml; proporciona una limpieza silenciosa. Sistema all-timetable para programar el robot 24 horas al día durante los 7 días de la semana, desde su mando a distancia con pantalla lcd ; el robot aspirador vuelve automáticamente a la base de carga al finalizar la limpieza; este cuenta con una batería de ion-litio de 14, 4 v y 2600 mah; con una autonomía de 160 minutos.",
   },
 ];

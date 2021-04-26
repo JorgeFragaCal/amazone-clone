@@ -3,6 +3,7 @@ import productContext from "./productContext";
 import productsReducer from "./productReducer";
 import {
   AGREGAR_PRODUCTO,
+  DETALLE_PRODUCTO,
   MOSTRAR_PRODUCTOS,
   AÑADIR_CARRITO,
   ELIMINAR_CARRITO,
@@ -12,6 +13,7 @@ import {
 const ProductsState = (props) => {
   //State inicial
   const initialState = {
+    productsDetail:[],
     products: [],
     basket: [],
   };
@@ -20,7 +22,14 @@ const ProductsState = (props) => {
   const [state, dispatch] = useReducer(productsReducer, initialState);
 
   //Obtener los productos
-  const getProduct = (products) => {
+  const getProductDetail = (id) => {
+    dispatch({
+      type: DETALLE_PRODUCTO,
+      payload: id,
+    });
+  }; 
+  //Obtener los productos
+  const getProducts = (products) => {
     dispatch({
       type: MOSTRAR_PRODUCTOS,
       payload: products,
@@ -68,7 +77,8 @@ const ProductsState = (props) => {
         products: state.products,
         basket: state.basket,
         addProduct,
-        getProduct,
+         getProductDetail, 
+        getProducts,
         addToBasket,
         deleteBasket,
         getBasketTotalProducts,
