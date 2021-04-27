@@ -130,7 +130,7 @@ const Sidebar = () => {
         </fieldset>
         <input
           type="submit"
-          className="button-primary"
+          className="button button-primary"
           onChange={onChange}
           value="Añadir"
         />

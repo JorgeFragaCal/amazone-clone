@@ -162,7 +162,7 @@ const ProductDetail = () => {
             </span>
             <div>
               <button
-                className="button-primary m-0"
+                className="button button-primary m-0"
                 onClick={() => addToBasket(productDetail)}
               >
                 Añadir a la cesta

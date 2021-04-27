@@ -19,7 +19,7 @@ const Header = () => {
         <div className="header__menu">
           <MenuIcon />
         </div>
-        <Link to="/" className="header__logo">
+        <Link to="/" className="header__logo header__linkHover">
           <img className="header__logoImg" alt="" src={logo} />
           <span className="header__logoLetter">.es</span>
         </Link>
@@ -35,20 +35,20 @@ const Header = () => {
           <SearchIcon className="header__searchIcon" />
         </form>
         <div className="header__nav">
-          <div className="header__option">
+          <Link to="/register" className="header__option header__linkHover">
             <span className="header__optionLineOne">Hola, Identifícate</span>
             <span className="header__optionLineTwo">Cuenta y listas</span>
-          </div>
-          <div className="header__option">
+          </Link>
+          <div className="header__option header__linkHover">
             <span className="header__optionLineOne">Devoluciones</span>
             <span className="header__optionLineTwo">y Pedidos</span>
           </div>
-          <div className="header__option">
+          <div className="header__option header__linkHover">
             <span className="header__optionLineOne">Suscríbete a</span>
             <span className="header__optionLineTwo">Prime</span>
           </div>
           <Link to="/checkout">
-            <div className="header__optionBasket">
+            <div className="header__optionBasket header__linkHover">
               <div className="header__mapLetter">
                 <span className="header__optionLineOneBasket">
                   {getBasketTotalProducts(basket)}
@@ -61,7 +61,7 @@ const Header = () => {
         </div>
       </div>
       <div className="subheader">
-        <div className="header__optionMap ">
+        <div className="header__optionMap header__linkHover">
           <RoomOutlinedIcon className="header__mapIcon" />
           <div className=" header__mapLetter">
             <span className="header__optionLineOne">Hola</span>
@@ -69,36 +69,36 @@ const Header = () => {
           </div>
         </div>
         <div className="subheader__fill">
-          <div className="subheader__option">
-            <Link to="/products">Ofertas anticipadas Black Friday</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Los Más Vendidos</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Amazon Basics</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Prime</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Últimas Novedades</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Atención al Cliente</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Cheques Regalo</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Electrónica y Fotografía</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Hogas y cocina</Link>
-          </div>
-          <div className="subheader__option">
-            <Link to="/products">Bricolaje y herramientas</Link>{" "}
-          </div>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Ofertas anticipadas Black Friday
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Los Más Vendidos
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Amazon Basics
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Prime
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Últimas Novedades
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Atención al Cliente
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Cheques Regalo
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Electrónica y Fotografía
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Hogas y cocina
+          </Link>
+          <Link to="/products" className="subheader__option header__linkHover">
+            Bricolaje y herramientas
+          </Link>
         </div>
         <img src={banner} alt="" />
       </div>

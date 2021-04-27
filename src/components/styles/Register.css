@@ -1,0 +1,71 @@
+.login {
+  padding: 14px 18px;
+  background-color: white;
+}
+.login__header {
+  margin: 0 auto;
+  width: 350px;
+  justify-content: center;
+}
+.logo__header-letter {
+  color: black;
+}
+.login__container {
+  margin: 10px auto 26px;
+  width: 310px;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+  background-color: white;
+  padding: 14px 18px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.login__container a {
+  color: #0066c0;
+}
+.login__container a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c45500;
+}
+
+.login__title {
+  margin-bottom: 15px;
+}
+.login__legalText {
+  margin: 18px 0 26px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.login__links {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+.login__container p svg {
+  font-size: 1rem;
+}
+.login__divider {
+  text-align: center;
+  position: relative;
+}
+.login__spanRegister {
+  font-size: 12px;
+  color: #767676;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 8px 0 7px;
+}
+.login__divider::after {
+  content: "";
+  width: 100%;
+  display: block;
+  border-top: 1px solid #e7e7e7;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}

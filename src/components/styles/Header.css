@@ -27,10 +27,7 @@
   height: 50px;
   border: 1px solid transparent;
 }
-.header__logo:hover {
-  border: 1px solid white;
-  border-radius: 3px;
-}
+
 .header__logoImg {
   width: 100px;
   object-fit: contain;
@@ -85,7 +82,7 @@
   border: solid 1px transparent;
   padding: 5px 10px;
 }
-.header__option:hover {
+.header__linkHover:hover {
   border: solid 1px white;
   border-radius: 2px;
   cursor: pointer;
@@ -96,11 +93,7 @@
   color: white;
   border: solid 1px transparent;
 }
-.header__optionMap:hover {
-  border: solid 1px white;
-  border-radius: 2px;
-  cursor: pointer;
-}
+
 .header__mapLetter {
   display: flex;
   flex-direction: column;
@@ -126,11 +119,7 @@
   color: white;
   border: solid 1px transparent;
 }
-.header__optionBasket:hover {
-  border: solid 1px white;
-  border-radius: 2px;
-  cursor: pointer;
-}
+
 .header__optionBasketIcon {
   font-size: 30px !important;
 }
@@ -170,11 +159,7 @@
   font-weight: 500;
   border: solid 1px transparent;
 }
-.subheader__option a {
+.subheader__option {
   color: white;
 }
-.subheader__option:hover {
-  border: solid 1px white;
-  border-radius: 2px;
-  cursor: pointer;
-}
+

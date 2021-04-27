@@ -37,7 +37,7 @@ function Product({ product }) {
         </div>
       </Link>
       <button
-        className="button-primary m-0"
+        className="button button-primary m-0"
         onClick={() => addToBasket(product)}
       >
         Añadir a la cesta
